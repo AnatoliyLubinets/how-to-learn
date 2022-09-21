@@ -64,8 +64,8 @@ color: #2f80ed;
   object-fit: cover;
   width: 765px;
   height: 608px;
-  top: 146px;
-  left: 831px;
+  bottom: 0;
+  right: 0;
   z-index: 2;
 }
 
@@ -75,7 +75,7 @@ color: #2f80ed;
   height: 568px;
   width: 568px;
   background: #2f80ed;
-  left: 1028px;
+  right: 0;
   top: 64px;
   z-index: 1;
 }
@@ -232,6 +232,7 @@ color: #2f80ed;
   height: 637px;
   width: 867px;
   bottom: 0px;
+  left: 0;
   z-index: -1;
 }
 
