@@ -316,6 +316,7 @@ color: #2f80ed;
 
 .kaufman__triangle {
   position: absolute;
+  object-fit: cover;
   background-size: 877px 877px;
   /*height: 0px;
   width: 0spx;
