@@ -229,6 +229,7 @@ color: #2f80ed;
 
 .feynman-illustration {
   position: absolute;
+  object-fit: cover;
   height: 637px;
   width: 867px;
   bottom: 0px;
