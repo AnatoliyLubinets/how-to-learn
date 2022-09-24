@@ -128,10 +128,14 @@
   padding-bottom: 30px;
   margin: 0;
 }
+.two-columns__paragraph:nth-of-type(3n) {
+  padding-bottom: 0;
+  margin: 0;
+}
 
 .section-title {
   text-align: center;
-  margin: 70px auto 20px auto;
+  margin: 100px auto 20px auto;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -171,6 +175,7 @@
 }
 
 .table__heading {
+  margin: 0 0 20px 0;
   display: flex;
   column-gap:0px;
   align-self: flex-start;
@@ -181,7 +186,7 @@
 
 .table__text {
   align-self: flex-start;
-  margin-top: 20px;
+  margin: 0 0 20px 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight:normal;
@@ -192,6 +197,7 @@
   background-color: #f2f2f2;
   margin: 100px 0 0 0;
   min-height: 890px;
+  z-index: -1;
 }
 
 .feynman__title {
@@ -202,6 +208,7 @@
   font-size: 120px;
   font-weight:600;
   width: 648px;
+  z-index: 2;
 }
 
 .feynman__subtitle {
@@ -210,6 +217,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .feynman__link {
@@ -221,15 +229,17 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+  z-index: 2;
 }
 
-.feynman-illustration {
+.feynman__illustration {
   position: absolute;
   object-fit: cover;
   height: 637px;
   width: 867px;
   bottom: 0px;
   left: 0px;
+  z-index: -1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -253,7 +263,6 @@
 }
 
 .section-title_theme_dark {
-  display: flex;
   position: relative;
   flex-direction: row;
   justify-content: center;
@@ -281,7 +290,6 @@
 }
 
 .table_theme_dark {
-  position: relative;
   display: flex;
   padding: 0;
   padding-bottom: 90px;
@@ -310,15 +318,18 @@
 }
 
 .table__heading_theme_dark {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
 .table__text_theme_dark {
+  align-self: flex-start;
+  margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
-  font-weight: normal;
+  font-weight:normal;
 }
 
 .footer {
@@ -387,7 +398,7 @@
 
 .footer__column-heading {
   margin: 0;
-  padding-bottom: 20px;
+  padding: 0;
   color: white;
   line-height: 30px;
   font-size: 18px;
@@ -395,11 +406,9 @@
 }
 
 .footer__column-links {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  text-decoration: none;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 16px 0px;
 }
 
 .footer__column-link {
