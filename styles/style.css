@@ -128,8 +128,8 @@
   padding-bottom: 30px;
   margin: 0;
 }
-.two-columns__paragraph:nth-of-type(3n) {
-  padding-bottom: 0;
+.two-columns__paragraph:last-child {
+  padding: 0;
   margin: 0;
 }
 
@@ -192,44 +192,18 @@
   font-weight:normal;
 }
 
+.table__text:last-child {
+  margin: 0;
+  padding: 0;
+}
+
 .feynman {
   position: relative;
+  object-fit: cover;
   background-color: #f2f2f2;
   margin: 100px 0 0 0;
   min-height: 890px;
-  z-index: -1;
-}
-
-.feynman__title {
-  text-align: center;
-  padding-top: 100px;
-  margin: auto;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight:600;
-  width: 648px;
-  z-index: 2;
-}
-
-.feynman__subtitle {
-  margin: 70px 0 0 0;
-  text-align: center;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  z-index: 2;
-}
-
-.feynman__link {
-  position: absolute;
-  right: 48px;
-  top: 50%;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  color: #2f80ed;
-  text-decoration: none;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feynman__illustration {
@@ -239,7 +213,42 @@
   width: 867px;
   bottom: 0px;
   left: 0px;
-  z-index: -1;
+  z-index: 2;
+}
+
+.feynman__title {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  margin: auto;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight:600;
+  width: 648px;
+  z-index: 3;
+}
+
+.feynman__subtitle {
+  position: relative;
+  margin: 70px 0 0 0;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 3;
+}
+
+.feynman__link {
+  position: relative;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  z-index: 3;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -315,7 +324,7 @@
 }
 
 .table__heading_theme_dark {
-  margin: 0;
+  margin: 0 0 20px 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -327,6 +336,11 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight:normal;
+}
+
+.table__text_theme_dark:last-child {
+  margin: 0;
+  padding: 0;
 }
 
 .footer {
