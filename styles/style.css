@@ -264,8 +264,7 @@
 
 .section-title_theme_dark {
   position: relative;
-  flex-direction: row;
-  justify-content: center;
+  text-align: center;
   margin: 0 auto 20px auto;
   width: 60%;
   line-height: 1.15;
@@ -276,11 +275,9 @@
 }
 
 .section-subtitle_theme_dark {
-  display: flex;
   position: relative;
-  flex-direction: row;
-  justify-content: center;
-  margin: 20px auto 0 auto;
+  text-align: center;
+  margin: 0 auto 0 auto;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
