@@ -1,102 +1,15 @@
-@keyframes square {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.rotation {
-  animation: square 20s infinite linear;
-}
-.content {
-  margin: 0;
-  padding: 0;
-}
-
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-.header {
-  display: flex;
-  background-color: #f2f2f2;
-  position: relative;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  overflow: hidden;
-  /* выше установили ограничения для секции */
-}
-
-.logo_place_header {
-  position: absolute;
-  height: 32px;
-  width: 228px;
-  top: 30px;
-  left: 64px;
-}
-
-.header__title {
-  align-self: center;
-  margin: 0;
-  line-height: 96px;
-  font-size: 102px;
-  font-weight:600;
-  width: 730px;
-  padding-left: 64px;
-  z-index: 3;
-}
-
-.header__subtitle {
-  position: absolute;
-  width: 388px;
-  left: 64px;
-  bottom: 30px;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight:normal;
-  z-index: 3;
-  margin: 0;
-}
-
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.header__main-illustration {
-  position: absolute;
-  object-fit: cover;
-  width: 765px;
-  height: 608px;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  position: absolute;
-  height: 568px;
-  width: 568px;
-  background: #2f80ed;
-  right: 0;
-  top: 64px;
-  z-index: 1;
-}
-
-.description {
-  margin-top: 100px;
-}
+@import url(../blocks/rotation/rotation.css);
+@import url(../styles/normalize.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/logo/_place_header/logo_place_header.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+@import url(../blocks/header/__square-pic/header__square-pic.css);
+@import url(../blocks/descriprion/description.css);
 
 .two-columns {
   display: flex;
