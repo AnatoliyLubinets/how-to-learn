@@ -1,0 +1,9 @@
+.feynman__illustration {
+  position: absolute;
+  object-fit: cover;
+  height: 637px;
+  width: 867px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+}

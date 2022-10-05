@@ -1,0 +1,11 @@
+.table__text_theme_dark {
+  align-self: flex-start;
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight:normal;
+}
+.table__text_theme_dark:last-child {
+  margin: 0;
+  padding: 0;
+}
