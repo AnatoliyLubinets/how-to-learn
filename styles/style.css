@@ -18,13 +18,7 @@
 @import url(../blocks/techniques/techniques.css);
 @import url(../blocks/techniques/cards/cards.css);
 @import url(../blocks/techniques/cards/__item/cards__item.css);
-
-.cards__image {
-  border-radius: 50%;
-  width: 160px;
-  height: 160px;
-  padding: 60px 40px 43px 40px;
-}
+@import url(../blocks/techniques/cards/__image/cards__image.css);
 
 .cards__title {
   margin: 0;
