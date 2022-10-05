@@ -1,7 +1,7 @@
-@import url(../blocks/rotation/rotation.css);
 @import url(../styles/normalize.css);
-@import url(../blocks/content/content.css);
+@import url(../blocks/rotation/rotation.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/content/content.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/logo/_place_header/logo_place_header.css);
@@ -10,82 +10,14 @@
 @import url(../blocks/header/__main-illustration/header__main-illustration.css);
 @import url(../blocks/header/__square-pic/header__square-pic.css);
 @import url(../blocks/descriprion/description.css);
-
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  min-width: 784px;
-  width: 80%;
-  margin: 0 0 0 100px;
-}
-
-.two-columns__brief {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  max-width: 175px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight:normal;
-  color: #2f80ed;
-}
-
-.two-columns__main-text {
-  display: flex;
-  flex-direction: column;
-  min-width: 784px;
-  width: 80%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.two-columns__span-accent {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.two-columns__paragraph {
-  padding-bottom: 30px;
-  margin: 0;
-}
-.two-columns__paragraph:last-child {
-  padding: 0;
-  margin: 0;
-}
-
-.techniques{
- margin: 100px auto 0 auto;
- padding: 0;
- width: 80%;
-}
-
-.cards {
-  box-sizing: border-box;
-  min-width: 920px;
-  margin: auto;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.cards__item {
-  box-sizing: border-box;
-  width: 240px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0 100px 0 0;
-  padding: 0;
-  list-style-type: none;
-}
+@import url(../blocks/descriprion/two-columns/two-columns.css);
+@import url(../blocks/descriprion/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/descriprion/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/descriprion/two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../blocks/descriprion/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/techniques/cards/cards.css);
+@import url(../blocks/techniques/cards/__item/cards__item.css);
 
 .cards__image {
   border-radius: 50%;
