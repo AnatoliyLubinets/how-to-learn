@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Проектная работа 1 Анатолия Лубинца на Яндекс.Практикуме">
   <meta name="keywords" content="html, css, javascript">
@@ -41,22 +41,26 @@
             <img class="cards__image" src="./images/cards-attention.png" alt="Картинка Внимание">
             <h4 class="cards__title">Два вида внимания</h4>
             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
-            <img class="cards__image" src="./images/cards-question.png" alt="Картинка Вопросы">
-            <h4 class="cards__title">Вопросы</h4>
-            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
           </li>
           <li class="cards__item">
             <img class="cards__image" src="./images/cards-recall.png" alt="Картинка Отзыв">
             <h4 class="cards__title">Recall</h4>
             <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
-            <img class="cards__image" src="./images/cards-competence.png" alt="Картинка Компетенции">
-            <h4 class="cards__title">Иллюзия компетентности</h4>
-            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
           </li>
           <li class="cards__item">
             <img class="cards__image" src="./images/cards-interliving.png" alt="Картинка Интерливинг">
             <h4 class="cards__title">Интерливинг</h4>
             <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-question.png" alt="Картинка Вопросы">
+            <h4 class="cards__title">Вопросы</h4>
+            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-competence.png" alt="Картинка Компетенции">
+            <h4 class="cards__title">Иллюзия компетентности</h4>
+            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
           </li>
         </ul>
       </section>
@@ -65,10 +69,8 @@
         <h2 class="section-title">Видео на TED</h2>
         <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
         <div class="video__iframes">
-          <div class="video__iframe">
-            <iframe name="kaufman" style="border:0;width:515px;height:316px;padding-right:20px;" src="https://www.youtube.com/embed/arj7oStGLkU?watch?v="></iframe>
-            <iframe name="urban" style="border:0;width:515px;height:316px" src="https://www.youtube.com/embed/5MgBikgcWnY?watch?v="></iframe>
-          </div>
+            <iframe class="video__iframe" name="kaufman" style="width:515px;height:316px;padding-right:20px;" src="https://www.youtube.com/embed/arj7oStGLkU?watch?v="></iframe>
+            <iframe class="video__iframe" name="urban" style="width:515px;height:316px" src="https://www.youtube.com/embed/5MgBikgcWnY?watch?v="></iframe>
         </div>
       </section>
 
@@ -134,7 +136,7 @@
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир - школа</h2>
           <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Обложка книги">
@@ -194,12 +196,12 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
-        <nav class="resources__logo-zone">
+        <div class="resources__logo-zone">
           <a class="resources__link" href="#" target="_blank"><img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Логотип арзамас"></a>
           <a class="resources__link" href="#" target="_blank"><img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Логотип н1"></a>
           <a class="resources__link" href="#" target="_blank"><img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Логотип СТРЕЛКА"></a>
           <a class="resources__link" href="#" target="_blank"><img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Логотип Полка"></a>
-        </nav>
+        </div>
       </section>
     </main>
 
